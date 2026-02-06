@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> PRIVATE ISLAND!</title>
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+
+
+<body>
+     <nav>
+    <a href="index.html">Home</a>
+    <a href="accommodations.html">Accommodations</a>
+    <a href="activities.html">Activities</a>
+    <a href="travels.html">Travels</a>
+    <a href="contact-info.html">Contact</a>
+  </nav>
+  <img name="slideshow" width="250" height="250" alt="Private Island Slideshow">
+  <script>
+  let images = [
+    "pictures/blacky.jpg",
+    "pictures/eagle.jpg",
+    "pictures/lion.jpg",
+    "pictures/mdishy.jpg",
+    "pictures/msosi.jpg",
+    "pictures/simba.jpg"
+  ];
+
+  let index = 0;
+  let slide = document.getElementsByName("slideshow")[0];
+
+  function changeImage() {
+    slide.src = images[index];
+    index = (index + 1) % images.length;
+  }
+
+  changeImage();
+  setInterval(changeImage, 3000);
+</script>
+
+
+   <h1>WELCOME TO PRIVATE ISLAND!</h1>
+    <p>Private island is a secure company for investors from different parts of the world to come,,,chheck and view the beautiful Kenyan landscape, travel to different parts and be able to see the beautiful scenery of what our country has to offer you!</p>
+    <p> </p>
+
+</body>
+
+</html>
