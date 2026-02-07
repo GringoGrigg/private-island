@@ -49,52 +49,91 @@ img[name="slideshow"] {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   object-fit: cover;
 }
-/* ===== TROPICAL DESTINATIONS ===== */
-h2.tropical 
-{
-  color: #f7325e;              /* Header color */
-  font-family: fantasy;        /* Fantasy font for headings */
-  margin-top: 40px;
+//* ===== GLOBAL RESET ===== */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: fantasy;
+  background-color: #f9f9f9;
 }
 
-p.tropical 
-{
-  color: #7dc410;              /* Text color */
-  font-family: fantasy;        /* Fantasy font for text */
-  line-height: 1.7;
+/* ===== DESTINATION CARD ===== */
+.destination {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+}
+
+/* ===== HEADERS ===== */
+.destination h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* ===== TROPICAL DESTINATIONS ===== */
+.destination.tropical h2 {
+  color: #f7325e;            /* Tropical header color */
+}
+
+.destination.tropical p {
+  color: #7dc410;            /* Tropical text color */
 }
 
 /* ===== POPULAR DESTINATIONS ===== */
-h2.popular 
-{
-  background-color: #fff3f6;   /* Light highlight background */
-  padding: 10px;
+.destination.popular {
   border-left: 6px solid #f7325e;
+  background-color: #fff3f6;
 }
 
-p.popular 
-{
-  background-color: #f6ffe6;   /* Subtle green background */
-  padding: 10px;
-  border-left: 6px solid #7dc410;
+/* ===== BOTH TROPICAL + POPULAR ===== */
+.destination.tropical.popular {
+  border-left: 8px solid #7dc410;
+  background: linear-gradient(
+    to right,
+    #fff3f6,
+    #f6ffe6
+  );
+}
+
+/* ===== TEXT ===== */
+.destination p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* ===== HIGHLIGHTED WORDS ===== */
+.highlight {
+  font-weight: bold;
+  color: #0a3d62;
 }
 
 /* ===== IMAGES ===== */
-img {
-  display: block;
+.destination img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
   margin: 15px 0;
-  border-radius: 8px;
+  display: block;
 }
 
 /* ===== LINKS ===== */
-a {
+.destination a {
   display: inline-block;
-  margin-bottom: 30px;
-  color: #0a3d62;
+  margin-top: 10px;
   text-decoration: none;
+  color: #0a3d62;
   font-weight: bold;
 }
 
-a:hover {
+.destination a:hover {
   text-decoration: underline;
+}
+
+/* ===== OPTIONAL HOVER EFFECT ===== */
+.destination:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
 }
