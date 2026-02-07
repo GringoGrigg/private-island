@@ -49,3 +49,52 @@ img[name="slideshow"] {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   object-fit: cover;
 }
+/* ===== TROPICAL DESTINATIONS ===== */
+h2.tropical 
+{
+  color: #f7325e;              /* Header color */
+  font-family: fantasy;        /* Fantasy font for headings */
+  margin-top: 40px;
+}
+
+p.tropical 
+{
+  color: #7dc410;              /* Text color */
+  font-family: fantasy;        /* Fantasy font for text */
+  line-height: 1.7;
+}
+
+/* ===== POPULAR DESTINATIONS ===== */
+h2.popular 
+{
+  background-color: #fff3f6;   /* Light highlight background */
+  padding: 10px;
+  border-left: 6px solid #f7325e;
+}
+
+p.popular 
+{
+  background-color: #f6ffe6;   /* Subtle green background */
+  padding: 10px;
+  border-left: 6px solid #7dc410;
+}
+
+/* ===== IMAGES ===== */
+img {
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+/* ===== LINKS ===== */
+a {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #0a3d62;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
