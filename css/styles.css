@@ -137,3 +137,53 @@ body {
   transform: translateY(-4px);
   transition: transform 0.3s ease;
 }
+@media (max-width: 480px) {
+
+  body {
+    padding: 10px;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .destination {
+    padding: 15px;
+  }
+
+  .destination img {
+    max-width: 100%;
+  }
+
+}
+@media (max-width: 768px) {
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .destination {
+    max-width: 90%;
+    margin: auto;
+  }
+
+}
+.destination {
+  padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .destination {
+    padding: 10px;
+  }
+}
